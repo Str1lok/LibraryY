@@ -8,6 +8,9 @@ public interface Service {
     void addMap(String key, String value);
     void deleteMap(String key);
     void loadFile(String filePath);
+
+    void clearDictionary();
+
     void saveToFile(String filePath);
     String findMap(String key);
 }

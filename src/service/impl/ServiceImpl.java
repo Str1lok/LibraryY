@@ -37,6 +37,10 @@ public class ServiceImpl implements Service {
         }
     }
     @Override
+    public void clearDictionary(){
+        dictionary.clear();
+    }
+    @Override
     public void saveToFile(String filePath) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write("{");
